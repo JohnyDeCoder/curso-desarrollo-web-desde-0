@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Videos</h1>
+
+    <h2>Forma 1</h2>
+    <video src="/assets/videos/meme.m4v" controls autoplay muted>
+        <!-- autoplay es un atributo booleano que indica si el video se reproduce automáticamente -->
+        <!-- controls es un atributo booleano que indica si se muestran los controles del video -->
+        <!-- muted es un atributo booleano que indica si el video se reproduce sin sonido -->
+        Tu navegador no soporta el elemento video
+    </video>
+
+    <h2>Forma 2</h2>
+    <video controls width="50%" poster="assets/img/wallhaven-v9gkjl.jpg">
+        <source src="/assets/videos/meme.m4v" type="video/mp4">
+        <!-- source es un elemento que permite especificar múltiples fuentes de video para el elemento video -->
+        <!-- type es un atributo que indica el tipo de video -->
+        <!-- poster es un atributo que indica la imagen que se muestra antes de que el video se reproduzca -->
+        Tu navegador no soporta el elemento video
+    </video>
+</body>
+
+</html>
