@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+</head>
+
+<body>
+    <h1>Tablas</h1>
+
+    <table border="1" sumary="Películas más taquilleras">
+        <thead> <!-- THEAD: Encabezado de tabla -->
+            <tr> <!-- TR: Filas -->
+                <th>Título</th> <!-- TD: Columnas y TH: Encabezado de tabla -->
+                <th>Género</th>
+                <th>Año</th>
+            </tr>
+        </thead>
+
+        <tbody> <!-- TBODY: Cuerpo de tabla -->
+            <tr>
+                <td>El Padrino</td>
+                <td>Drama</td>
+                <td>1972</td>
+            </tr>
+            <tr>
+                <td>Cualquiera I</td>
+                <td>Terror</td>
+                <td>1974</td>
+            </tr>
+            <tr>
+                <td>Cualquiera II</td>
+                <td colspan="2" rowspan="2">Comedia</td>
+                <!-- Colspan: Expande una celda en columnas y Rowspan: Expade una celda en filas -->
+            </tr>
+            <tr>
+                <td>Cualquiera III</td>
+            </tr>
+        </tbody>
+
+        <tfoot> <!-- TFOOT: Pie de tabla -->
+            <tr>
+                <td colspan="3">Total de películas: 3</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>
