@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+
+<body>
+    <h1>Formularios</h1>
+
+    <form>
+        <h2>Validacion</h2>
+
+        <input type="text" required minlength="5" maxlength="20" pattern="[A-Za-z ]+" />
+
+        <input type="number" required max="20" min="5" />
+
+        <input type="submit" value="Enviar" />
+    </form>
+    <hr> <!-- HR: Línea horizontal -->
+
+    <!--
+        Etiqueta Formulario,
+        METHOD = GET: Envía los datos por la URL
+        METHOD = POST: Envía los datos por el cuerpo de la petición
+        ACTION: URL a la que se enviarán los datos
+        ENCTYPE: Tipo de codificación de los datos
+    -->
+    <form>
+        <!--
+            Etiqueta Input,
+            TYPE: Tipo de campo
+            ID: Identificador del campo
+            NAME: Nombre del campo
+            VALUE: Valor del campo
+            PLACEHOLDER: Texto de ayuda
+        -->
+        <fieldset> <!-- FIELDSET permite organizar campos de formularios -->
+            <legend>Información personal</legend> <!-- LEGEND permite dar un título a un FIELDSET -->
+
+            <div> <!-- TEXT: tipo de campo para escribir todo tipo de texot -->
+                <label for="nombre">Nombre:</label>
+                <!-- FOR: Un parámetro para indicar que el label pertenece a un campo por ID -->
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre" />
+            </div>
+
+            <div>
+                <label for="descripcion">Descripción:</label>
+                <textarea id="descripcion"></textarea>
+            </div>
+
+            <div> <!-- EMAIL: tipo de campo para escribir un email -->
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="Email" />
+            </div>
+
+            <div> <!-- PASSWORD: tipo de campo para escribir una contraseña y la oculta -->
+                <label for="password">Contraseña:</label>
+                <input type="password" name="password" id="password" placeholder="Contraseña" />
+            </div>
+
+            <div> <!-- RADIO: tipo de campo para seleccionar una opción -->
+                <label for="hombre">Género:</label>
+
+                <input type="radio" name="hombre" id="hombre" value="hombre" />
+                <label for="hombre">Hombre</label>
+
+                <input type="radio" name="mujer" id="mujer" value="mujer" />
+                <label for="mujer">Mujer</label>
+            </div>
+
+            <div> <!-- SELECT: tipo de campo para seleccionar una opción de una lista -->
+                Select:
+                <select>
+                    <option value="hombre">Hombre</option>
+                    <option value="mujer">Mujer</option>
+                    <option value="otro">Otro</option>
+                </select>
+            </div>
+
+            <div> <!-- CHECKBOX: tipo de campo para seleccionar varias opciones -->
+                Checkbox:
+                <input type="checkbox" name="terminos" id="terminos" />
+                <label for="terminos">Acepto los términos y condiciones</label>
+            </div>
+
+            <div> <!-- COLOR: tipo de campo para seleccionar un color -->
+                Color:
+                <input type="color" name="color" id="color" />
+            </div>
+
+            <div> <!-- DATE: tipo de campo para seleccionar una fecha -->
+                Fecha:
+                <input type="date" name="fecha" id="fecha" />
+            </div>
+
+            <div> <!-- FILE: tipo de campo para seleccionar y cargar archivos de tu sistema -->
+                Ficheros:
+                <input type="file" name="fichero" id="fichero" />
+            </div>
+
+            <div>
+                <!-- IMAGE: tipo de campo para seleccionar un punto en la imagen y se envían las coordenadas donde hiciste click -->
+                Imagen:
+                <input type="image" name="imagen" id="imagen" src="/assets/img/wallhaven-1k7d2g.png" width="20%" />
+            </div>
+
+            <div> <!-- HIDDEN: tipo de campo oculto para enviar información oculta -->
+                Hidden:
+                <input type="hidden" name="oculto" id="oculto" value="¡BRIMSTONE!" />
+            </div>
+
+            <div> <!-- NUMBER: tipo de campo para escribir solo números -->
+                Número:
+                <input type="number" name="numero" id="numero" value="666" />
+            </div>
+
+            <div> <!-- RANGE: tipo de campo para seleccionar un número en un rango -->
+                Rango:
+                <input type="range" name="rango" id="rango" min="0" max="10" />
+            </div>
+
+            <div> <!-- SEARCH: tipo de campo para escribir y buscar algo -->
+                Búsqueda:
+                <input type="search" name="busqueda" id="busqueda" />
+            </div>
+
+            <div> <!-- TEL: tipo de campo para escribir un número de teléfono -->
+                Teléfono:
+                <input type="tel" name="telefono" id="telefono" />
+            </div>
+
+            <div> <!-- TIME: tipo de campo para escribir una hora -->
+                Hora:
+                <input type="time" name="hora" id="hora" />
+            </div>
+
+            <div>
+                Mes:
+                <input type="month" name="mes" id="mes" />
+            </div>
+
+            <div>
+                Semana:
+                <input type="week" name="semana" id="semana" />
+            </div>
+
+            <div>
+                URL:
+                <input type="url" name="url" id="url" />
+            </div>
+
+            <div>
+                Barra de progreso:
+                <progress value="50" max="100"></progress>
+            </div>
+
+            <div>
+                Meter:
+                <meter value="50" min="0" max="100"></meter>
+            </div>
+
+            <div>
+                Lista de datos:
+                <input type="text" list="lista" />
+                <datalist id="lista">
+                    <option value="Brimstone"></option>
+                    <option value="Latch Key"></option>
+                    <option value="Diplopia"></option>
+                    <option value="Continum"></option>
+                    <option value="God Head"></option>
+                    <option value="Sacred Heart"></option>
+                    <option value="The Mind"></option>
+                    <option value="The Body"></option>
+                    <option value="The Soul"></option>
+                    <option value="The D4"></option>
+                    <option value="Daddy Longlegs"></option>
+                </datalist>
+            </div>
+
+            <div>
+                Reset:
+                <input type="reset" value="¿RESETEAR?" />
+            </div>
+
+        </fieldset>
+
+        <button type="submit">Enviar</button>
+        <!-- <input type="submit" value="Enviar" /> ES LIMITADO A BUTTON-->
+    </form>
+</body>
+
+</html>
