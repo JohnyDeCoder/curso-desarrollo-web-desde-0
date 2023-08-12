@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/assets/img/favicon.png">
+    <title>Mini Proyecto con HTML 5</title>
+</head>
+
+<body>
+    <header>
+        <h1>Cult of the Sacred Lamb</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="multimedia.html">Multimedia</a></li>
+                <li><a href="dieta.html">Dieta</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="contacto">
+            <h2>Contacto</h2>
+
+            <form>
+                <div>
+                    <label for="name">Nombre:</label>
+                    <input type="text" name="name" id="name" placeholder="Josechuy" required>
+                </div>
+                <div>
+                    <label for="lastName">Apellidos:</label>
+                    <input type="text" name="lastName" id="lastName" placeholder="Fulano" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="josesitosuy@gmail.com" required>
+                </div>
+                <div>
+                    <label for="edad">Edad:</label>
+                    <input type="number" name="edad" id="edad" min="18" max="99" value="18" required>
+                </div>
+                <div>
+                    <label for="genero">Género:</label>
+                    <select>
+                        <option value="hombre">Hombre</option>
+                        <option value="mujer">Mujer</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="motivo">Motivo de contacto:</label>
+                    <textarea name="motivo" id="motivo" placeholder="Escribe tu motivo aquí..."></textarea>
+                </div>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+
+
+        <footer>
+            <hr>
+            Proyecto HTML 5 con ejercicios de Victor Robles Web.
+            <a href="#top">Ir Arriba &uarr;</a>
+        </footer>
+    </main>
+
+
+</body>
+
+</html>
