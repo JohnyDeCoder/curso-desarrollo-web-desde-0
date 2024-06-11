@@ -1,38 +1,73 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Máster en CSS</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-</head>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
 
-<body>
-    <h1>Máster en CSS</h1>
+  <body>
+    <h1 id="titulo">Máster en CSS</h1>
 
-    <ul>
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Temario</a></li>
-        <li><a href="#">Reseñas</a></li>
-        <li><a href="#">Contacto</a></li>
+    <ul id="menu">
+      <li><a href="#">Inicio</a></li>
+      <li>
+        <a href="#">Temario</a>
+        <ul>
+          <li><a href="#">HTML</a></li>
+          <li><a href="#">CSS</a></li>
+          <li><a href="#">LESS</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Reseñas</a></li>
+      <li><a href="#">Contacto</a></li>
     </ul>
 
     <div id="descripcion">
-        <h2>Descripción del curso</h2>
-        <p>Lorem ipsum dolor sit am et, consectetur adipisicing elit. Quisquam, voluptatum.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At animi, doloremque culpa necessitatibus
-            repellendus exercitationem id ex dolorum, sapiente minima distinctio. Quia veniam accusantium quas, esse eos
-            nesciunt necessitatibus ipsam.
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut vero nostrum repellat dolorum in? Non esse
-            deleniti recusandae exercitationem, dolorum eveniet cupiditate cum voluptatem facere repudiandae iste
-            consectetur ex tempore.
-        </p>
+      <h2>Descripción del curso</h2>
+      <p class="parrafo">
+        Lorem ipsum dolor sit am et, consectetur adipisicing elit. Quisquam,
+        voluptatum.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. At animi,
+        doloremque culpa necessitatibus repellendus exercitationem id ex
+        dolorum, sapiente minima distinctio. Quia veniam accusantium quas, esse
+        eos nesciunt necessitatibus ipsam. Lorem, ipsum dolor sit amet
+        consectetur adipisicing elit. Aut vero nostrum repellat dolorum in? Non
+        esse deleniti recusandae exercitationem, dolorum eveniet cupiditate cum
+        voluptatem facere repudiandae iste consectetur ex tempore.
+      </p>
+    </div>
+
+    <div id="usuario">
+      <form>
+        <label for="nombre">Nombre:</label>
+        <input
+          type="text"
+          id="nombre"
+          name="nombre"
+          placeholder="Escribe tu nombre"
+        />
+        <label for="apellido">Apellidos:</label>
+        <input
+          type="text"
+          id="apellido"
+          name="apellido"
+          placeholder="Escribe tu apellido"
+        />
+        <input type="submit" value="Enviar" />
+      </form>
+    </div>
+
+    <div id="saludo">
+      <h1>Hola, soy <span id="nombre-usuario">Johny</span>.</h1>
     </div>
 
     <footer>
-        Todos los derechos reservados. &copy; <a href="johnydecoder.tech">johnydecoder.tech</a> 2023
+      Todos los derechos reservados. &copy;
+      <a href="johnydecoder.tech">johnydecoder.tech</a> 2023
     </footer>
-</body>
-
+  </body>
 </html>
